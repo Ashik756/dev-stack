@@ -39,7 +39,7 @@ export default function Technologies({ techPromise }: TechnologiesProps) {
     };
 
     return (
-        <section className="py-16 px-4 max-w-7xl mx-auto">
+        <section id="technologies" className="py-16 px-4 max-w-7xl mx-auto">
             <div className="mb-12">
                 <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-3 tracking-tight">
                     Explore the <span className="text-pink-600">Technologies</span>

@@ -68,7 +68,7 @@ export default function TechnologieCard({ tech, onAdd, isInStack }: TechnologieC
               : "bg-[#0B0F19] hover:bg-black text-white shadow-sm"
           }`}
         >
-          {isInStack ? "Added to Stack" : "Add to Stack"}
+          {isInStack ? "✓ Added to Stack" : "Add to Stack"}
         </button>
       </div>
     </div>
