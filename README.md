@@ -13,7 +13,7 @@
 
 ## Key Features ✨
 1. **Interactive Technology Explorer:** Browse modern technologies categorized by type in a card-based layout.
-2. **Dynamic "Your Stack" Management:** Add preferred technologies to your stack, remove specific items with an 'X', or clear everything using "Remove All".
+2. **Dynamic "Your Stack" Management:** Add preferred technologies to your stack, remove specific items with an 'X' , or clear everything using "Remove All".
 3. **Real-time Toast Notifications:** Instant feedback alerts powered by `react-toastify` whenever your stack is updated.
 
 ---
@@ -39,7 +39,7 @@
 
 ### 6. What is conditional rendering? Show one place you used it (example: the empty stack message).
 **Answer:** Conditional rendering means rendering different UI elements based on specific conditions (using operators like ternary `? :` or `&&`).
-* **Example:** Showing an "empty stack" message or the selected tech list depending on whether items exist in the stack.
+* **Example:** "empty stack" message or the selected tech list depending on whether items exist in the stack.
 ```tsx
 {selectedStack.length === 0 ? (
   <div>Your stack is empty.</div>
