@@ -11,7 +11,10 @@ const NAV = [
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState<boolean>(false);
-    const [activeHash, setActiveHash] = useState<string>(window.location.hash || "#top");
+
+    const [activeHash, setActiveHash] = useState<string>(() => {
+        return window.location.hash || "#top";
+    });
 
     useEffect(() => {
         const handleHashChange = () => {
@@ -19,10 +22,6 @@ export default function Navbar() {
         };
 
         window.addEventListener('hashchange', handleHashChange);
-
-        if (!window.location.hash) {
-            setActiveHash("#top");
-        }
 
         return () => window.removeEventListener('hashchange', handleHashChange);
     }, []);
