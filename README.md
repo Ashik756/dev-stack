@@ -57,9 +57,3 @@ If no technology has been added yet, an empty-state message is shown; otherwise,
 
 ### 7. How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
 **Answer:** A parent passes data down to a child through **props**. In this project, `Technologies` passes each `tech` object and an `isInStack` boolean down to `TechnologieCard` as props: `<TechnologieCard tech={tech} onAdd={handleAddToStack} isInStack={isInStack} />`. For a child to send data back up, the parent passes a **callback function** as a prop; the child calls that function (optionally with arguments) when something happens. Here, `TechnologieCard` calls `onAdd(tech)` when its button is clicked, which runs `handleAddToStack` back in the parent and updates the `selectedStack` state.
-
----
-
-## 📤 Submission
-- **GitHub Repository:** https://github.com/Ashik756/dev-stack
-- **Live Site:** _add your deployed link here_
